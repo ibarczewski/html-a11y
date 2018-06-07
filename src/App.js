@@ -29,7 +29,6 @@ class App extends Component {
         </header>
         <div class="container">
           <div class="description">This site is to test your HTML for accessibility errors. HTML A11y uses requirements listed in 508 Reference Guide - 1194.22 from the US Access Board, and checks for conformity against the Web Content Accessibility Guidelines 2.0 at Level AA.</div>
-          
           <div class="description">Enter your HTML here. HTML must be valid.</div>
           <textarea aria-label="HTML entry box" value={this.state.html} onChange={this.handleChange}></textarea>
           <p className="App-intro">
