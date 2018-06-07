@@ -1,0 +1,25 @@
+{
+  "name": "html-a11y",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "accessibilityjs": "^1.1.2",
+    "cheerio": "^1.0.0-rc.2",
+    "html_codesniffer": "^2.2.0",
+    "jsdom": "^11.11.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-html-parser": "^2.0.2",
+    "react-scripts": "1.1.4",
+    "string-to-html": "^1.3.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:aws": "react-scripts build && yarn deploy",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://html-a11y.com"
+  }
+}
