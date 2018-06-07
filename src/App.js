@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import * as cheerio from 'cheerio';
 import {scanForProblems} from 'accessibilityjs'
-import toHtml from 'string-to-html';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import * as _ from 'lodash';
 
 class App extends Component {
